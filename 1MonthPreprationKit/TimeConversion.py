@@ -21,7 +21,7 @@ def timeConversion(s):
         if s[:2] == '12':
             s = s.replace('12','00')
         ns = s.replace('AM','')
-        print(ns)
+        return ns
     #Condicion para cambiar formato PM
     if (s[-2:].upper()) == 'PM':
         #Condicion para cambiar las 12hs en pm y am
@@ -34,7 +34,7 @@ def timeConversion(s):
         sum = int(firstcar) + 12
         #nueva hora
         ns = s.replace(firstcar,str(sum))
-        print(ns)
+        return ns
 
 #if __name__ == '__main__':
 #    fptr = open(os.environ['OUTPUT_PATH'], 'w')
@@ -47,5 +47,5 @@ def timeConversion(s):
 
 #    fptr.close()
 
-time = str('12:05:45PM')
+time = str('12:05:00AM')
 timeConversion(time)
