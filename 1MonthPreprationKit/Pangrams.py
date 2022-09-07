@@ -14,26 +14,6 @@ import sys
 #
 
 def pangrams(s):
-<<<<<<< HEAD
-    s = s.replace(' ','')
-    s = s.lower()
-    i = 97 
-    j = 0
-    cont = 0
-    abc = []
-    while i <= 26:
-        abc.append(chr(i))
-        i += 1
-        print(chr(i))
-    print(abc)
-    #if cont == 25:
-    #    print('pangram')
-    #else:
-    #    print('not pangram')
-
-string = 'We promptly judged antique ivory buckles for the next prize'
-pangrams(string)
-=======
     abc = [chr(index) for index in range(97,123)]
     s = s.replace(' ','')
     ns = [str.lower(s[i]) for i in range(len(s))]
@@ -53,4 +33,3 @@ pangrams(string)
 str1 = "We promptly judged antique ivory buckles for the prize"
 str2 = "We promptly judged antique ivory buckles for the next prize"
 pangrams(str2)
->>>>>>> 0004db53296e94f069154d875e6e658d91787fb0
